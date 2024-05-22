@@ -1,0 +1,275 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+      background-color: var(--Background, #f6f6f6);
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      background-color: var(--White, #fff);
+      width: 100%;
+      color: var(--Black, #101010);
+      text-align: center;
+      padding: 23px 60px 12px;
+      font: 400 30px Shrikhand, sans-serif;
+    }
+  
+    .location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background-color: var(--Grey-2, #eaeaea);
+      width: 100%;
+      font-size: 16px;
+      color: var(--Grey, #353535);
+      font-weight: 500;
+      padding: 16px 60px;
+    }
+  
+    .location-details {
+      display: flex;
+      gap: 17px;
+    }
+  
+    .location-icon {
+      aspect-ratio: 0.75;
+      object-fit: auto;
+      object-position: center;
+      width: 12px;
+      fill: var(--Grey, #353535);
+      margin: auto 0;
+    }
+  
+    .location-text {
+      font-family: Roboto, sans-serif;
+    }
+  
+    .menu-heading {
+      color: #000;
+      text-align:center;
+      align-self: center;
+      margin-top: 43px;
+      width: 275px;
+      font: 700 24px Roboto, sans-serif;
+    }
+  
+    .subheading {
+      color: var(--Grey, #353535);
+      text-align: center;
+      align-self: center;
+      margin-top: 22px;
+      font: 300 18px Roboto, sans-serif;
+    }
+  
+    .illustration {
+      aspect-ratio: 3.45;
+      object-fit: auto;
+      object-position: center;
+      width: 238px;
+      align-self: center;
+      margin-top: 25px;
+      max-width: 100%;
+    }
+  
+    .function-section {
+      background-color: var(--White, #fff);
+      display: flex;
+      margin-top: 43px;
+      width: 100%;
+      flex-direction: column;
+      font-weight: 500;
+      padding: 60px 20px;
+    }
+  
+    .function-heading {
+      color: #000;
+      font: 700 24px Roboto, sans-serif;
+    }
+  
+    .function-item {
+      display: flex;
+      margin-top: 35px;
+      gap: 0px;
+    }
+  
+    .step-circle {
+      background-color: var(--Primary, #9356dc);
+      border-radius: 50%;
+      z-index: 10;
+      align-items: center;
+      color: var(--White, #fff);
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      font: 14px Roboto, sans-serif;
+      margin: auto 0;
+    }
+  
+    .step-details {
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      background-color: var(--Background, #f6f6f6);
+      display: flex;
+      gap: 20px;
+      font-size: 16px;
+      color: #000;
+      flex-grow: 1;
+      padding: 27px 33px;
+    }
+  
+    .step-icon {
+      aspect-ratio: 0.68;
+      object-fit: auto;
+      object-position: center;
+      width: 13px;
+      fill: var(--Grey-Tint4, #7e7e7e);
+      align-self: start;
+    }
+  
+    .step-description {
+      font-family: Roboto, sans-serif;
+      flex-grow: 1;
+    }
+  
+    .restaurant-section {
+      display: flex;
+      margin-top: 59px;
+      width: 100%;
+      flex-direction: column;
+      padding: 0 17px;
+    }
+  
+    .restaurant-heading {
+      color: #000;
+      font-family: 700 24px Roboto, sans-serif;
+    }
+  
+    .restaurant-item {
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      display: flex;
+      margin-top: 26px;
+      padding-bottom: 20px;
+      flex-direction: column;
+    }
+  
+    .restaurant-image-wrapper {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      align-items: flex-end;
+      font-size: 14px;
+      color: var(--Green-Font, #008766);
+      font-weight: 500;
+      text-align: center;
+      padding: 13px 60px 80px;
+    }
+  
+    .restaurant-image {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    .restaurant-badge {
+      position: relative;
+      font-family: Roboto, sans-serif;
+      border-radius: 2px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      background-color: var(--Green, #99e2d0);
+      margin-bottom: 26px;
+      justify-content: center;
+      padding: 10px 13px;
+    }
+  
+    .restaurant-details {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+      color: #000;
+      padding: 0 16px;
+    }
+  
+    .restaurant-title {
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  
+    .restaurant-name {
+      font-family: Roboto, sans-serif;
+      flex-grow: 1;
+    }
+  
+    .restaurant-icon {
+      aspect-ratio: 1.05;
+      object-fit: auto;
+      object-position: center;
+      width: 22px;
+      align-self: start;
+    }
+  
+    .restaurant-location {
+      font: 300 17px Roboto, sans-serif;
+    }
+  
+    .footer {
+      display: flex;
+      align-items: flex-start;
+      background-color: var(--Grey, #353535);
+      display: flex;
+      margin-top: 66px;
+      width: 100%;
+      flex-direction: column;
+      font-size: 16px;
+      color: var(--White, #fff);
+      font-weight: 400;
+      padding: 22px 25px;
+    }
+  
+    .footer-text {
+      font: 18px Shrikhand, sans-serif;
+    }
+  
+    .footer-link-wrapper {
+      display: flex;
+      margin-top: 22px;
+      gap: 11px;
+      font-weight: 500;
+      padding: 2px 0;
+    }
+  
+    .footer-link-icon {
+      aspect-ratio: 0.85;
+      object-fit: auto;
+      object-position: center;
+      width: 11px;
+      fill: var(--White, #fff);
+      align-self: start;
+    }
+  
+    .footer-link-text {
+      font-family: Roboto, sans-serif;
+      flex-grow: 1;
+    }
