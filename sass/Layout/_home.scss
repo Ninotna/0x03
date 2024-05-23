@@ -1,0 +1,174 @@
+
+
+
+// Header
+
+
+// main
+
+.main
+{
+    // div .main__location
+    &__location{
+        height: rem-calc(70);
+        background-color: #EAEAEA;
+        @include flex-center;
+            p::before{
+                content: '\f3c5';
+                font-family: 'FontAwesome';
+                margin-right: rem-calc(15);
+        }
+    }
+
+    // section .main__description
+    &__description{
+        flex-direction: column;
+        padding: 40px 26px 57px 34px;
+        text-align: center;
+        background-color: #F6F6F6;
+        @include flex-center;
+            &__text{
+                margin: rem-calc(15) 0 rem-calc(35);
+                font-weight: 300;
+            }
+            &__btn{
+
+            }
+    }
+
+    // section main__workflow
+    &__workflow {
+
+        padding: 48px 20px 68px 20px;
+
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    
+        &__step {
+            display: flex;
+            align-items: center;
+            background-color: #f8f8f8;
+            border-radius: 20px; 
+            padding: 1rem;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        &__number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            margin-right: 1rem;
+            background-color: $color-primary;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 1rem;
+        }
+    
+        &__icon {
+            font-size: 1.5rem;
+            color: #757575; // Default icon color
+            margin-right: 1rem;
+    
+            &--step1 {
+                // color: $color-primary; // Color for step 1 icon
+            }
+    
+            &--step2 {
+                // color: $color-primary; // Color for step 2 icon
+            }
+    
+            &--step3 {
+                color: $color-primary; // Color for step 3 icon
+            }
+        }
+    
+        &__text {
+            font-size: 1rem;
+            color: #333;
+        }
+    }
+}
+
+
+// Section .workflow Fonctionnement (classe: workflow)
+
+
+
+
+// Section Restaurant
+
+.restaurant-section {
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image-wrapper {
+        position: relative;
+
+        .restaurant-section__image {
+            width: 100%;
+            height: auto;
+        }
+
+        .restaurant-section__badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ff4081;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            border-radius: 4px;
+        }
+    }
+
+    &__details {
+        padding: 1rem;
+
+        .restaurant-section__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+
+            .restaurant-section__name {
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+
+            .restaurant-section__icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .restaurant-section__location {
+            font-size: 1rem;
+            color: #757575;
+        }
+    }
+}

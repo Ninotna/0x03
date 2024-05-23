@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+// Utilities
+@import './Utilities/_variables';
+@import './Utilities/_mixins';
+
+@import './Layout/_loader';
+
+// Base
+@import './Base/_reset';
+@import './Base/_base';
+
+
+
+// Components
+
+@import './Components/_components';
+
+// Layout
+
+@import './Layout/_home';
+@import './Layout/_home-desktop';
+
+
+h1 {
+    color:red;
+}
+
