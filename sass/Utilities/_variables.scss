@@ -4,7 +4,6 @@ $base-font-size : 16px;
 
 // Identité graphique
 
-
 // Polices
 // Logo et titres : Shrikhand
 // Texte : Roboto
@@ -15,5 +14,15 @@ $title-font : 'Shrikhand', cursive;
 
 // Couleurs identité graphique
 $color-primary : #9356DC;
+$light-primary-color : lighten($color-primary, 5%);
 $color-secondary : #FF79DA;
+$light-secondary-color : lighten($color-secondary, 5%);
 $color-tertiary : #99E2D0;
+
+$gradient : linear-gradient(to bottom, $color-secondary, $color-primary 80%);
+$light-gradient : linear-gradient(to bottom, $light-secondary-color, $light-primary-color 80%);
+
+// Couleurs de la tasse à café lors du chargement
+$color-loader-cup: #ffffff; // Couleur de la tasse
+$color-loader-text: #ffffff; // Couleur du texte du chargement
+$color-loader-steam: #9356DC; // Couleur de la vapeur
