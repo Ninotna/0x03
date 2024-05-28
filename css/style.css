@@ -122,7 +122,7 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
 }
 .main__workflow {
-  padding: 48px 20px 68px 20px;
+  padding: 48px 2vh 68px 2vh;
 }
 .main__workflow__title {
   font-size: 2rem;
@@ -165,6 +165,9 @@ img {
   color: #333;
 }
 
+.restaurant-section {
+  padding: 0 2vh;
+}
 .restaurant-section__heading {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -183,10 +186,13 @@ img {
 }
 .restaurant-section__image-wrapper {
   position: relative;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: #FFF;
 }
 .restaurant-section__image-wrapper .restaurant-section__image {
   width: 100%;
-  height: auto;
+  height: 231px;
 }
 .restaurant-section__image-wrapper .restaurant-section__badge {
   position: absolute;
