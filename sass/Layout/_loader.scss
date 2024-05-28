@@ -9,7 +9,7 @@
     background-color: #000000;
     @include flex-center;
     flex-direction: column;
-    animation: visibility 4.5s ease both;
+    animation: visibility calc(4.5s /2) ease both;
 
     &__text {
         font-size: 30px;
@@ -22,7 +22,7 @@
             content: '...';
             position: absolute;
             left: 100%;
-            animation: dots 2.25s steps(4, end) infinite;
+            animation: dots calc(2.25s /2) steps(4, end) infinite;
         }
     }
 
