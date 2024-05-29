@@ -1,5 +1,24 @@
 // main
 
+// Main and Header Styling with Separators
+.header,
+.main__location
+{
+	position: relative; // Ensure the pseudo-element is positioned relative to its parent
+
+	&::after
+	{
+		content: '';
+		display: block;
+		height: 10px; // Height of the separator
+		background-color: $color-light-grey; // Light gray color for the separator
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); // 5px shadow below
+		position: absolute;
+		bottom: -10px; // Position the separator 10px below the element
+		left: 0;
+	}
+}
+
 .main
 {
     // div .main__location

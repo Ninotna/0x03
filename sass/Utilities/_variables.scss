@@ -1,4 +1,6 @@
 
+
+
 // Font-size
 $base-font-size : 16px;
 
@@ -23,6 +25,12 @@ $light-primary-color : lighten($color-primary, 5%);
 $color-secondary : #FF79DA;
 $light-secondary-color : lighten($color-secondary, 5%);
 $color-tertiary : #99E2D0;
+
+// Ajout de couleurs
+$color-grey: #eaeaeac2; // Define your grey color variable
+$color-dark-grey: #333; // Dark grey color for text and icon
+$color-light-grey: lighten($color-grey, 10%); // Lighter grey color using lighten function
+
 
 $gradient : linear-gradient(to bottom, $color-secondary, $color-primary 80%);
 $light-gradient : linear-gradient(to bottom, $light-secondary-color, $light-primary-color 80%);
