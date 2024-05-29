@@ -76,9 +76,10 @@ img {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1023px) and (min-width: 767px) {
+@media screen and (min-width: 1023px) {
   .header {
     height: 80px;
+    padding: 30px 0 31.8px 0;
   }
 }
 .header img {
@@ -161,9 +162,29 @@ img {
 .main__workflow {
   padding: 48px 2vh 68px 2vh;
 }
+@media screen and (min-width: 767px) {
+  .main__workflow {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 50px 80px 50px 80px;
+    min-width: 760px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .main__workflow {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 50px 180px 50px 180px;
+  }
+}
 .main__workflow__title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .main__workflow__title {
+    align-self: center;
+  }
 }
 .main__workflow__step {
   display: flex;
@@ -204,10 +225,18 @@ img {
 
 .restaurant-section {
   padding: 0 2vh;
+  margin-bottom: 4.25rem;
 }
 @media screen and (min-width: 1023px) {
   .restaurant-section {
     margin-bottom: 1.875rem;
+    padding: 0 180px 0 180px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .restaurant-section {
+    margin-bottom: 1.875rem;
+    padding: 0 80px 0 80px;
   }
 }
 .restaurant-section__heading {
@@ -242,7 +271,7 @@ img {
   top: 10px;
   right: 10px;
   background-color: #99E2D0;
-  color: #fff;
+  color: #008766;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   border-radius: 4px;
@@ -310,6 +339,12 @@ img {
   font-weight: 400;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 767px) {
+  .footer h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1023px) {
   .footer h2 {
     text-align: right;
@@ -319,7 +354,7 @@ img {
 .footer__nav {
   margin: 0.625rem 0;
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 767px) {
   .footer__nav {
     display: flex;
     justify-content: center;
@@ -347,12 +382,14 @@ img {
   font-family: "FontAwesome";
   margin-right: 0.625rem;
   font-size: clamp(1.3rem, 2vw, 1.7rem);
+  align-content: center;
 }
 .footer__nav li:nth-child(2)::before {
   content: "\f4c4";
   font-family: "FontAwesome";
   margin-right: 0.625rem;
   font-size: clamp(1.3rem, 2vw, 1.7rem);
+  align-content: center;
 }
 .footer__nav li a {
   transition: color 0.4s ease-in-out;

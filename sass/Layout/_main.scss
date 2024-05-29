@@ -71,10 +71,26 @@
     {
         padding: 48px 2vh 68px 2vh;
 
+        @media screen and (min-width: $breakpoint-tablet) {
+            text-align: left;
+            margin-bottom:0;
+            padding: 50px 80px 50px 80px;
+            min-width: 760px;
+        }
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            text-align: left;
+            margin-bottom:0;
+            padding: 50px 180px 50px 180px;
+        }
+
         &__title 
         {
             font-size: 2rem;
             margin-bottom: 1.5rem;
+            @media screen and (min-width: 768px) {
+                align-self: center;
+            }
         }
     
         &__step 
@@ -148,7 +164,13 @@
 	padding: 0 2vh;
     @media screen and (min-width: $breakpoint-desktop) {
         margin-bottom:px2rem(30);
+        padding: 0 180px 0 180px;
     }
+    @media screen and (min-width: $breakpoint-tablet) {
+        margin-bottom:px2rem(30);
+        padding: 0 80px 0 80px;
+    }
+    margin-bottom:px2rem(68);
 
 	&__heading
 	{
@@ -193,10 +215,11 @@
 		top: 10px;
 		right: 10px;
 		background-color: $color-tertiary;
-		color: #fff;
+		color: #008766;
 		padding: 0.5rem 1rem;
 		font-size: 0.875rem;
 		border-radius: 4px;
+
 	}
 
 	&__info

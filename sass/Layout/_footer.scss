@@ -12,6 +12,10 @@
             font-family: $title-font;
             font-weight: 400;
             margin-bottom:px2rem(16);
+            @media screen and (min-width: $breakpoint-tablet) {
+                text-align: center;
+                margin-bottom:0;
+            }
             @media screen and (min-width: $breakpoint-desktop) {
                 text-align: right;
                 margin-bottom:0;
@@ -19,7 +23,7 @@
         }
         &__nav{
             margin: px2rem(10) 0;
-            @media screen and (min-width: $breakpoint-desktop) {
+            @media screen and (min-width: $breakpoint-tablet) {
                 @include flex-center;
                 flex-wrap: nowrap;
             }
@@ -38,12 +42,14 @@
                         font-family: 'FontAwesome';
                         margin-right: px2rem(10);
                         font-size: clamp(1.3rem, 2vw, 1.7rem);
+                        align-content: center;
                     }
                     &:nth-child(2)::before{
                         content: '\f4c4';
                         font-family: 'FontAwesome';
                         margin-right: px2rem(10);
                         font-size: clamp(1.3rem, 2vw, 1.7rem);
+                        align-content: center;
                     }
                     a{
                         transition: color 0.4s ease-in-out;
