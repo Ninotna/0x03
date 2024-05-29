@@ -1,0 +1,56 @@
+.footer{
+    padding: px2rem(30) px2rem(20);
+    color: white;
+    background-color: #333;
+    @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    }
+
+        h2{
+            font-family: $title-font;
+            font-weight: 400;
+            margin-bottom:px2rem(16);
+            @media screen and (min-width: $breakpoint-desktop) {
+                text-align: right;
+                margin-bottom:0;
+            }
+        }
+        &__nav{
+            margin: px2rem(10) 0;
+            @media screen and (min-width: $breakpoint-desktop) {
+                @include flex-center;
+                flex-wrap: nowrap;
+            }
+            li{
+                margin-bottom: px2rem(3);
+                @media screen and (min-width: $breakpoint-tablet) {
+                    margin: 0 px2rem(20);
+                    display: flex;
+                }
+                @media screen and (min-width: $breakpoint-lg-desktop) {
+                    margin: 0 px2rem(40);
+                    display: flex;
+                }
+                    &:nth-child(1)::before{
+                        content: '\f2e7';
+                        font-family: 'FontAwesome';
+                        margin-right: px2rem(10);
+                        font-size: clamp(1.3rem, 2vw, 1.7rem);
+                    }
+                    &:nth-child(2)::before{
+                        content: '\f4c4';
+                        font-family: 'FontAwesome';
+                        margin-right: px2rem(10);
+                        font-size: clamp(1.3rem, 2vw, 1.7rem);
+                    }
+                    a{
+                        transition: color 0.4s ease-in-out;
+                        &:hover, &:focus{
+                            color: $light-primary-color;
+                            }
+                    }
+            }
+        }
+}

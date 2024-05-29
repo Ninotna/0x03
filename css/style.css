@@ -14,17 +14,12 @@ html {
 body {
   font-size: 1rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1023px) {
   body {
     font-size: 16px;
   }
 }
-@media (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     font-size: 16px;
   }
@@ -81,7 +76,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1440px) and (min-width: 1024px) {
+@media (max-width: 1023px) and (min-width: 767px) {
   .header {
     height: 80px;
   }
@@ -90,7 +85,7 @@ img {
   width: 170px;
   height: auto;
 }
-@media (max-width: 1440px) and (min-width: 1024px) {
+@media (max-width: 1023px) and (min-width: 767px) {
   .header img {
     width: auto;
     width: 250px;
@@ -154,7 +149,7 @@ img {
   transition: all 0.4s ease-in-out;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
 }
-@media (max-width: 1440px) and (min-width: 1024px) {
+@media (max-width: 1023px) and (min-width: 767px) {
   .main__description__btn {
     padding: 1.25rem;
   }
@@ -209,6 +204,11 @@ img {
 
 .restaurant-section {
   padding: 0 2vh;
+}
+@media screen and (min-width: 1023px) {
+  .restaurant-section {
+    margin-bottom: 1.875rem;
+  }
 }
 .restaurant-section__heading {
   font-size: 2rem;
@@ -291,6 +291,74 @@ img {
 .restaurant-section__info__heart:hover::after {
   font-weight: 900;
   opacity: 1;
+}
+
+.footer {
+  padding: 1.875rem 1.25rem;
+  color: white;
+  background-color: #333;
+}
+@media screen and (min-width: 1023px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+}
+.footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1023px) {
+  .footer h2 {
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
+.footer__nav {
+  margin: 0.625rem 0;
+}
+@media screen and (min-width: 1023px) {
+  .footer__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.footer__nav li {
+  margin-bottom: 0.1875rem;
+}
+@media screen and (min-width: 767px) {
+  .footer__nav li {
+    margin: 0 1.25rem;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__nav li {
+    margin: 0 2.5rem;
+    display: flex;
+  }
+}
+.footer__nav li:nth-child(1)::before {
+  content: "\f2e7";
+  font-family: "FontAwesome";
+  margin-right: 0.625rem;
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+.footer__nav li:nth-child(2)::before {
+  content: "\f4c4";
+  font-family: "FontAwesome";
+  margin-right: 0.625rem;
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+.footer__nav li a {
+  transition: color 0.4s ease-in-out;
+}
+.footer__nav li a:hover, .footer__nav li a:focus {
+  color: #a16be0;
 }
 
 .loader {

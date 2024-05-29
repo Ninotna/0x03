@@ -8,17 +8,17 @@ body
 {
 	font-size: 1rem;
 
+	@include respond-to(lg-desktop)
+	{
+		font-size: $base-font-size;
+	}
+
 	@include respond-to(desktop)
 	{
 		font-size: $base-font-size;
 	}
 
 	@include respond-to(tablet)
-	{
-		font-size: $base-font-size;
-	}
-
-	@include respond-to(mobile)
 	{
 		font-size: $base-font-size;
 	}

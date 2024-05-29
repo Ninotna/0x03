@@ -146,6 +146,9 @@
 .restaurant-section
 {
 	padding: 0 2vh;
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin-bottom:px2rem(30);
+    }
 
 	&__heading
 	{
