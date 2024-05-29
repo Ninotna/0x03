@@ -2,23 +2,9 @@
 // Font-size
 $base-font-size : 16px;
 
-// desktop
-@media (max-width: 1440px) {
-
-      $base-font-size: 16px; //1 rem
-    }
-  
-  // tablet
-  @media (max-width: 1024px) {
-
-    $base-font-size: 16px; //1 rem
-}
-  
-  // mobile
-  @media (max-width: 768px) {
-
-    $base-font-size: 16px; //1 rem
-}
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1440px;
 
 
 // Identité graphique

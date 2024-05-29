@@ -6,6 +6,40 @@
     align-items: center;
 }
 
+// management of breakpoints
+
+@mixin respond-to($breakpoint)
+{
+	@if $breakpoint == desktop
+	{
+		@media (max-width: $breakpoint-desktop)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint == tablet
+	{
+		@media (max-width: $breakpoint-tablet)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint == mobile
+	{
+		@media (max-width: $breakpoint-mobile)
+		{
+			@content;
+		}
+	}
+	@if $breakpoint == tablet-desktop
+	{
+		@media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet)
+		{
+			@content;
+		}
+	}
+}
+
 
 // button-style
 
@@ -29,4 +63,23 @@
 
 @mixin button-shadow{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+}
+
+
+// Heart
+
+@mixin heart{
+    content: '\f004';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+}
+
+@mixin heart-solid{
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    opacity: 0;
+    cursor: pointer;
 }

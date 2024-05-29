@@ -3,8 +3,7 @@
 // Utilities
 @import './Utilities/_variables';
 @import './Utilities/_mixins';
-
-
+@import './Utilities/_functions';
 
 // Base
 @import './Base/_reset';
@@ -20,4 +19,5 @@
 @import './Layout/_main';
 @import './Layout/_footer';
 @import './Layout/_loader';
+
 

@@ -3,49 +3,63 @@
 .main
 {
     // div .main__location
-    &__location{
+    &__location
+    {
         height: 50px;
         background-color: #EAEAEA;
         background: var(--Grey-2, #EAEAEA);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         font-size:16px;
         @include flex-center;
-            p::before{
+            p::before
+            {
                 content: '\f3c5';
                 font-family: 'FontAwesome';
                 margin-right: 15px;
-        }
+            }
     }
 
     // section .main__description
-    &__description{
+    &__description
+    {
         flex-direction: column;
         padding: 40px 26px 57px 34px;
         text-align: center;
         background-color: #F6F6F6;
         @include flex-center;
-            &__text{
-                margin: rem-calc(15) 0 rem-calc(35);
+            &__text
+            {
+                margin: px2rem(15) 0 px2rem(35);
                 font-weight: 300;
             }
-            &__btn{
+            &__btn
+            {
                 @include button-style;
-                @include button-hover;
                 @include button-shadow;
+                @include respond-to(tablet-desktop)
+                {
+                    padding: px2rem(20);
+                }
+                &:hover
+                {
+                    @include button-hover; 
+                }
             }
     }
 
     // section main__workflow
-    &__workflow {
-
+    &__workflow 
+    {
         padding: 48px 2vh 68px 2vh;
 
-        &__title {
+        &__title 
+        {
             font-size: 2rem;
             margin-bottom: 1.5rem;
         }
     
-        &__step {
+        &__step 
+        {
             display: flex;
             align-items: center;
             background-color: #f8f8f8;
@@ -54,12 +68,14 @@
             margin-bottom: 25px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     
-            &:last-child {
+            &:last-child 
+            {
                 margin-bottom: 0;
             }
         }
     
-        &__number {
+        &__number 
+        {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -72,25 +88,30 @@
             font-size: 1rem;
         }
     
-        &__icon {
+        &__icon 
+        {
             font-size: 1.5rem;
             color: #757575; // Default icon color
             margin-right: 1rem;
     
-            &--step1 {
+            &--step1 
+            {
                 // color: $color-primary; // Color for step 1 icon
             }
     
-            &--step2 {
+            &--step2 
+            {
                 // color: $color-primary; // Color for step 2 icon
             }
     
-            &--step3 {
+            &--step3 
+            {
                 color: $color-primary; // Color for step 3 icon
             }
         }
     
-        &__text {
+        &__text 
+        {
             font-size: 1rem;
             color: #333;
         }
@@ -99,8 +120,6 @@
 
 
 // Section .workflow Fonctionnement (classe: workflow)
-
-
 
 
 // Section Restaurant
@@ -143,9 +162,9 @@
         .restaurant-section__badge {
             position: absolute;
             top: 10px;
-            left: 10px;
-            background-color: #ff4081;
-            color: #fff;
+            right: 10px;
+            background-color: $color-tertiary;
+            color: #008766;
             padding: 0.5rem 1rem;
             font-size: 0.875rem;
             border-radius: 4px;

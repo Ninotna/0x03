@@ -4,6 +4,28 @@ html{
     scroll-behavior: smooth;
 }
 
+body
+{
+	font-size: 1rem;
+
+	@include respond-to(desktop)
+	{
+		font-size: $base-font-size;
+	}
+
+	@include respond-to(tablet)
+	{
+		font-size: $base-font-size;
+	}
+
+	@include respond-to(mobile)
+	{
+		font-size: $base-font-size;
+	}
+}
+
+
+
 h1{
     font-family: $title-font;
     font-weight: 500;

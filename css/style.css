@@ -11,6 +11,25 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-size: 1rem;
+}
+@media (max-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
@@ -57,12 +76,12 @@ img {
 .header {
   height: 60px;
   width: 100%;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.591);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.591);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
   .header {
     height: 80px;
   }
@@ -71,7 +90,7 @@ img {
   width: 170px;
   height: auto;
 }
-@media screen and (min-width: 768px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
   .header img {
     width: auto;
     width: 250px;
@@ -103,7 +122,7 @@ img {
   align-items: center;
 }
 .main__description__text {
-  margin: rem-calc(15) 0 rem-calc(35);
+  margin: 0.9375rem 0 2.1875rem;
   font-weight: 300;
 }
 .main__description__btn {
@@ -117,9 +136,16 @@ img {
   font-size: clamp(1rem, 2vw, 1.2rem);
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   transition: all 0.4s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+}
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .main__description__btn {
+    padding: 1.25rem;
+  }
+}
+.main__description__btn:hover {
   box-shadow: 5px 5px 5px black;
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
 }
 .main__workflow {
   padding: 48px 2vh 68px 2vh;
@@ -197,9 +223,9 @@ img {
 .restaurant-section__image-wrapper .restaurant-section__badge {
   position: absolute;
   top: 10px;
-  left: 10px;
-  background-color: #ff4081;
-  color: #fff;
+  right: 10px;
+  background-color: #99E2D0;
+  color: #008766;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   border-radius: 4px;
