@@ -124,76 +124,90 @@
 
 // Section Restaurant
 
-.restaurant-section {
-    padding: 0 2vh;
+.restaurant-section
+{
+	padding: 0 2vh;
 
-    &__heading {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
+	&__heading
+	{
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
 
-    &__item {
+	&__item
+	{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1.5rem;
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		position: relative;
+
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+
+	&__image
+	{
+		width: 100%;
+		height: 175px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+
+	&__badge
+	{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background-color: $color-tertiary;
+		color: #fff;
+		padding: 0.5rem 1rem;
+		font-size: 0.875rem;
+		border-radius: 4px;
+	}
+
+	&__info
+    {
+        position: relative;
         display: flex;
         flex-direction: column;
-        margin-bottom: 1.5rem;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    &__image-wrapper {
-        position: relative;
-        // padding: 0 2vh;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-        border-radius:15px;
-        background: #FFF;
-
-        .restaurant-section__image {
-            width: 100%;
-            height: 231px;
-
-        }
-
-        .restaurant-section__badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: $color-tertiary;
-            color: #008766;
-            padding: 0.5rem 1rem;
-            font-size: 0.875rem;
-            border-radius: 4px;
-        }
-    }
-
-    &__details {
-        padding: 1rem;
-
-        .restaurant-section__title {
+        justify-content: center;
+        height: 30%;
+        padding: px2rem(10) px2rem(15);
+        h3{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 0.5rem;
-
-            .restaurant-section__name {
-                font-size: 1.25rem;
-                font-weight: 700;
-            }
-
-            .restaurant-section__icon {
-                width: 24px;
-                height: 24px;
-            }
         }
-
-        .restaurant-section__location {
-            font-size: 1rem;
-            color: #757575;
+        &__heart{
+            @include flex-center;
+            width: px2rem(30);
+            height: px2rem(30);
+            &::before{
+                @include heart;
+            }
+            &::after{
+                @include heart;
+                @include heart-solid;
+                }
+            &:hover::before{
+                color:transparent;
+            }
+            &:hover::after{
+                font-weight: 900;
+                opacity: 1;
+            }
         }
     }
 }
