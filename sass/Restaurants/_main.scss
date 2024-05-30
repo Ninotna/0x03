@@ -1,11 +1,11 @@
 // Main
 .main-content {
     &__banner-image {
-        max-height: 55vh;
-        min-height: 30vh;
+        height:394px;
+
     }
 
-    &__menu {
+    .menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -69,7 +69,7 @@
             padding: px2rem(10) px2rem(20) px2rem(40);
             width: 100%;
 
-            @media screen and (min-width: 1300px) {
+            @media screen and (min-width: $breakpoint-tablet) {
                 width: 30%;
                 padding-bottom: px2rem(40);
             }
