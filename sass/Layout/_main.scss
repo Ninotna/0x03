@@ -195,117 +195,115 @@
 
 // Section Restaurant
 
-.restaurant-section
-{
-	padding: 54px 2vh 0 2vh;
-	background-color: $color-bg-grey;
+.restaurant-section {
+    padding: 54px 2vh 0 2vh;
+    background-color: $color-bg-grey;
 
     @media screen and (min-width: $breakpoint-tablet) {
-        margin-bottom:px2rem(30);
-        padding: 0 80px 0 80px;
+        margin-bottom: px2rem(30);
+        padding: 0 60px 0 60px;
     }
     @media screen and (min-width: $breakpoint-desktop) {
-        margin-bottom:px2rem(30);
+        margin-bottom: px2rem(30);
         padding: 0 180px 0 180px;
     }
-    margin-bottom:px2rem(68);
+    margin-bottom: px2rem(68);
 
-	&__heading
-	{
-		font-size: 2rem;
-		margin: 0 0 1.5rem 0;
-	}
-
-    &__items{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    max-width: px2rem(2000);
-    @media screen and (min-width: $breakpoint-tablet) {
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 0 px2rem(50);
-    }
+    &__heading {
+        font-size: 2rem;
+        margin: 0 0 1.5rem 0;
     }
 
-	&__item
-	{
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 1.5rem;
-		background-color: #fff;
-		border-radius: 8px;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-		overflow: hidden;
-		position: relative;
+    &__items {
+        display: grid; /* Changed from flex to grid */
+        grid-template-columns: 1fr; /* Set single column for smaller screens */
+
+        margin: 0 auto;
+        width: 100%;
+        max-width: px2rem(2000);
         @media screen and (min-width: $breakpoint-tablet) {
-            width:45%;
+			gap: 25px 50px;
+            grid-template-columns: repeat(2, 1fr); /* Two columns for tablet and larger screens */
         }
-        
-		a
-		{
-			text-decoration: none;
-			color: inherit;
-		}
-	}
+		@media screen and (min-width: $breakpoint-desktop) {
+			gap: 50px 100px;
+        }
+    }
 
-	&__image
-	{
-		width: 100%;
-		height: 175px;
-		border-top-left-radius: 8px;
-		border-top-right-radius: 8px;
-	}
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
 
-	&__badge
-	{
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		background-color: $color-tertiary;
-		color: #008766;
-		padding: 0.5rem 1rem;
-		font-size: 0.875rem;
-		border-radius: 4px;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
 
-	}
+    &__image {
+        width: 100%;
+        height: 175px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 
-	&__info
-    {
+    &__badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: $color-tertiary;
+        color: #008766;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        border-radius: 4px;
+    }
+
+    &__info {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 30%;
         padding: px2rem(10) px2rem(15);
-        h3{
+
+        h3 {
             display: flex;
             align-items: center;
             justify-content: space-between;
-			font-weight: 700;
-			font-size:18px;
+            font-weight: 700;
+            font-size: 18px;
         }
-		p{
-			font-weight:300;
-			font-size: 17px;
-		}
-        &__heart{
+
+        p {
+            font-weight: 300;
+            font-size: 17px;
+        }
+
+        &__heart {
             @include flex-center;
             width: px2rem(30);
             height: px2rem(30);
-            &::before{
+
+            &::before {
                 @include heart;
             }
-            &::after{
+
+            &::after {
                 @include heart;
                 @include heart-solid;
-                }
-            &:hover::before{
-                color:transparent;
             }
-            &:hover::after{
+
+            &:hover::before {
+                color: transparent;
+            }
+
+            &:hover::after {
                 font-weight: 900;
                 opacity: 1;
             }

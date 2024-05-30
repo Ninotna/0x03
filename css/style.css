@@ -254,7 +254,7 @@ img {
 @media screen and (min-width: 767px) {
   .restaurant-section {
     margin-bottom: 1.875rem;
-    padding: 0 80px 0 80px;
+    padding: 0 60px 0 60px;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -268,18 +268,21 @@ img {
   margin: 0 0 1.5rem 0;
 }
 .restaurant-section__items {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: grid; /* Changed from flex to grid */
+  grid-template-columns: 1fr; /* Set single column for smaller screens */
   margin: 0 auto;
   width: 100%;
   max-width: 125rem;
 }
 @media screen and (min-width: 767px) {
   .restaurant-section__items {
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 0 3.125rem;
+    gap: 25px 50px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablet and larger screens */
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurant-section__items {
+    gap: 50px 100px;
   }
 }
 .restaurant-section__item {
@@ -291,11 +294,6 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
-}
-@media screen and (min-width: 767px) {
-  .restaurant-section__item {
-    width: 45%;
-  }
 }
 .restaurant-section__item a {
   text-decoration: none;
@@ -349,8 +347,8 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 22px;
-  width: 21px;
+  height: 1.375rem;
+  width: 1.3125rem;
 }
 .restaurant-section__info__heart::after {
   content: "\f004";
@@ -358,8 +356,8 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 22px;
-  width: 21px;
+  height: 1.375rem;
+  width: 1.3125rem;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -626,8 +624,8 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 22px;
-  width: 21px;
+  height: 1.375rem;
+  width: 1.3125rem;
 }
 .main-content .menu .heart::after {
   content: "\f004";
@@ -635,8 +633,8 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 22px;
-  width: 21px;
+  height: 1.375rem;
+  width: 1.3125rem;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
