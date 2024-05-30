@@ -73,6 +73,7 @@
     font-family: "Font Awesome 5 Free";
     position: absolute;
     transition: all 0.8s ease-in-out;
+	font-weight: 300;
 }
 
 @mixin heart-solid{
@@ -82,4 +83,5 @@
     -webkit-text-fill-color: transparent; 
     opacity: 0;
     cursor: pointer;
+	font-weight: 300;
 }

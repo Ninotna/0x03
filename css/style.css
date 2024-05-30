@@ -205,7 +205,7 @@ img {
   background-color: #f8f8f8;
   border-radius: 20px;
   padding: 1rem;
-  margin-bottom: 25px;
+  margin: 0 20px 25px 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
@@ -215,21 +215,23 @@ img {
     margin-right: 1rem;
     width: 30%;
   }
-}
-.main__workflow__step:last-child {
-  margin-right: 0;
+  .main__workflow__step:last-child {
+    margin-right: 0;
+  }
 }
 .main__workflow__number {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   margin-right: 1rem;
   background-color: #9356DC;
   color: #fff;
   border-radius: 50%;
   font-size: 1rem;
+  position: absolute;
+  margin-left: -1.875rem;
 }
 .main__workflow__icon {
   font-size: 1.5rem;
@@ -326,6 +328,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+}
+.restaurant-section__info p {
+  font-weight: 300;
+  font-size: 17px;
 }
 .restaurant-section__info__heart {
   display: flex;
@@ -339,18 +347,21 @@ img {
   font-family: "Font Awesome 5 Free";
   position: absolute;
   transition: all 0.8s ease-in-out;
+  font-weight: 300;
 }
 .restaurant-section__info__heart::after {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
   transition: all 0.8s ease-in-out;
+  font-weight: 300;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   cursor: pointer;
+  font-weight: 300;
 }
 .restaurant-section__info__heart:hover::before {
   color: transparent;
@@ -609,18 +620,21 @@ img {
   font-family: "Font Awesome 5 Free";
   position: absolute;
   transition: all 0.8s ease-in-out;
+  font-weight: 300;
 }
 .main-content .menu .heart::after {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
   transition: all 0.8s ease-in-out;
+  font-weight: 300;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   cursor: pointer;
+  font-weight: 300;
 }
 .main-content .menu .heart:hover::before {
   color: transparent;

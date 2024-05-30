@@ -123,7 +123,7 @@
 		background-color: #f8f8f8;
 		border-radius: 20px;
 		padding: 1rem;
-		margin-bottom: 25px;
+		margin: 0 20px 25px 20px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 		width:100%;
 
@@ -131,13 +131,14 @@
 		{
 			margin-bottom: 0;
 			margin-right: 1rem;
-            width:30%
+            width:30%;
             
-		}
+		
 
 		&:last-child 
 		{
 			margin-right: 0;
+		}
 		}
 	}
 
@@ -146,13 +147,15 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 30px;
-		height: 30px;
+		width: 24px;
+		height: 24px;
 		margin-right: 1rem;
 		background-color: $color-primary;
 		color: #fff;
 		border-radius: 50%;
 		font-size: 1rem;
+		position:absolute;
+		margin-left:px2rem(-30);
 	}
 
 	&__icon 
@@ -280,7 +283,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+			font-weight: 700;
+			font-size:18px;
         }
+		p{
+			font-weight:300;
+			font-size: 17px;
+		}
         &__heart{
             @include flex-center;
             width: px2rem(30);
