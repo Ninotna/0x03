@@ -287,8 +287,8 @@
 
         &__heart {
             @include flex-center;
-            width: px2rem(30);
-            height: px2rem(30);
+            width: 22px;
+            height: 21px;
 
             &::before {
                 @include heart;

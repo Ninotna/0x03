@@ -338,8 +338,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 22px;
+  height: 21px;
 }
 .restaurant-section__info__heart::before {
   content: "\f004";
@@ -347,8 +347,6 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 1.375rem;
-  width: 1.3125rem;
 }
 .restaurant-section__info__heart::after {
   content: "\f004";
@@ -356,8 +354,6 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 1.375rem;
-  width: 1.3125rem;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -646,8 +642,6 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 1.375rem;
-  width: 1.3125rem;
 }
 .main__menu .heart::after {
   content: "\f004";
@@ -655,8 +649,6 @@ img {
   position: absolute;
   transition: all 0.8s ease-in-out;
   font-weight: 300;
-  height: 1.375rem;
-  width: 1.3125rem;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
