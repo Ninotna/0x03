@@ -160,30 +160,43 @@ img {
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
 }
 .main__workflow {
-  padding: 48px 2vh 68px 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0 68px 0;
+  margin-top: 3rem;
 }
 @media screen and (min-width: 767px) {
   .main__workflow {
-    text-align: left;
-    margin-bottom: 0;
-    padding: 50px 80px 50px 80px;
-    min-width: 760px;
+    padding: 3.125rem 5rem;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1023px) {
   .main__workflow {
-    text-align: left;
-    margin-bottom: 0;
-    padding: 50px 180px 50px 180px;
+    padding: 3.125rem 11.25rem;
   }
 }
 .main__workflow__title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .main__workflow__title {
-    align-self: center;
+    text-align: left;
+  }
+}
+.main__workflow__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 767px) {
+  .main__workflow__steps {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 .main__workflow__step {
@@ -195,8 +208,15 @@ img {
   margin-bottom: 25px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+@media screen and (min-width: 767px) {
+  .main__workflow__step {
+    margin-bottom: 0;
+    margin-right: 1rem;
+    width: 30%;
+  }
+}
 .main__workflow__step:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 .main__workflow__number {
   display: flex;
@@ -215,6 +235,12 @@ img {
   color: #757575;
   margin-right: 1rem;
 }
+.main__workflow__icon--step1 {
+  color: #9356DC;
+}
+.main__workflow__icon--step2 {
+  color: #9356DC;
+}
 .main__workflow__icon--step3 {
   color: #9356DC;
 }
@@ -227,16 +253,16 @@ img {
   padding: 0 2vh;
   margin-bottom: 4.25rem;
 }
-@media screen and (min-width: 1023px) {
-  .restaurant-section {
-    margin-bottom: 1.875rem;
-    padding: 0 180px 0 180px;
-  }
-}
 @media screen and (min-width: 767px) {
   .restaurant-section {
     margin-bottom: 1.875rem;
     padding: 0 80px 0 80px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurant-section {
+    margin-bottom: 1.875rem;
+    padding: 0 180px 0 180px;
   }
 }
 .restaurant-section__heading {
