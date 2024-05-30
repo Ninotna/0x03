@@ -146,7 +146,7 @@ img {
   color: white;
   font-weight: 400;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -157,7 +157,7 @@ img {
 }
 .main__description__btn:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
+  background: linear-gradient(201deg, #ff93e1 -5.2%, #a16be0 110.74%);
 }
 .main__workflow {
   display: flex;
@@ -247,7 +247,8 @@ img {
 }
 
 .restaurant-section {
-  padding: 0 2vh;
+  padding: 54px 2vh 0 2vh;
+  background-color: #F6F6F6;
   margin-bottom: 4.25rem;
 }
 @media screen and (min-width: 767px) {
@@ -264,7 +265,7 @@ img {
 }
 .restaurant-section__heading {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
 }
 .restaurant-section__items {
   display: flex;
@@ -359,7 +360,7 @@ img {
   font-weight: 300;
   height: 22px;
   width: 21px;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -636,7 +637,7 @@ img {
   font-weight: 300;
   height: 22px;
   width: 21px;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -685,7 +686,7 @@ img {
   color: white;
   font-weight: 400;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   padding: 0.9375rem 2.5rem;
@@ -693,7 +694,7 @@ img {
 }
 .main-content .menu__btn--order:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
+  background: linear-gradient(201deg, #ff93e1 -5.2%, #a16be0 110.74%);
 }
 
 .menu-item {
