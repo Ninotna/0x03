@@ -52,7 +52,7 @@ p {
 }
 
 a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   color: inherit;
 }
@@ -572,10 +572,16 @@ img {
   font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-.main-content__banner-image {
-  height: 394px;
+.main__banner {
+  height: 252px;
 }
-.main-content .menu {
+@media screen and (min-width: 767px) {
+  .main__banner {
+    height: 394px;
+  }
+}
+
+.main__menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -583,42 +589,58 @@ img {
   gap: 0 2.5rem;
   position: relative;
   top: -50px;
+  border-radius: 50px;
+  min-width: 635px;
+  padding: 51px 13px 40px 13px;
+  background-color: #F6F6F6;
 }
-@media screen and (min-width: 1300px) {
-  .main-content .menu {
+@media screen and (min-width: 767px) {
+  .main__menu {
     flex-direction: row;
+    padding: 51px 210px 40px 210px;
   }
 }
-.main-content .menu__title {
+@media screen and (min-width: 1400px) {
+  .main__menu {
+    margin: 0 192px;
+  }
+}
+.main__menu__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: "Shrikhand", cursive;
   font-weight: 500;
-  padding: 1.25rem;
   width: 100%;
-  border-radius: 1.875rem 1.875rem 0 0;
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-  background-color: white;
+  font-size: 1.75rem;
+  padding: 0 2rem 0 2rem;
+}
+@media screen and (min-width: 767px) {
+  .main__menu__title {
+    padding: 0px 2rem 0 2rem;
+  }
 }
 @media screen and (min-width: 1300px) {
-  .main-content .menu__title {
+  .main__menu__title {
     justify-content: center;
   }
 }
-.main-content .menu .heart {
+.main__menu__title h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.875rem;
-  height: 1.875rem;
+}
+.main__menu .heart {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 24px;
 }
 @media screen and (min-width: 1300px) {
-  .main-content .menu .heart {
-    margin-left: 1.25rem;
+  .main__menu .heart {
+    margin-left: 2rem;
   }
 }
-.main-content .menu .heart::before {
+.main__menu .heart::before {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -627,7 +649,7 @@ img {
   height: 1.375rem;
   width: 1.3125rem;
 }
-.main-content .menu .heart::after {
+.main__menu .heart::after {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -643,39 +665,38 @@ img {
   cursor: pointer;
   font-weight: 300;
 }
-.main-content .menu .heart:hover::before {
+.main__menu .heart:hover::before {
   color: transparent;
 }
-.main-content .menu .heart:hover::after {
+.main__menu .heart:hover::after {
   font-weight: 900;
   opacity: 1;
 }
-.main-content .menu__section--starters, .main-content .menu__section--dishes, .main-content .menu__section--desserts {
-  padding: 0.625rem 1.25rem 2.5rem;
+.main__menu__items {
+  padding: 1rem 2rem 2.5rem;
   width: 100%;
 }
 @media screen and (min-width: 767px) {
-  .main-content .menu__section--starters, .main-content .menu__section--dishes, .main-content .menu__section--desserts {
-    width: 30%;
+  .main__menu__items {
+    width: 100%;
     padding-bottom: 2.5rem;
   }
 }
-.main-content .menu__section--starters h3, .main-content .menu__section--dishes h3, .main-content .menu__section--desserts h3 {
+.main__menu__items h3 {
   position: relative;
-  margin-bottom: 1.875rem;
-  padding-left: 0.625rem;
+  margin-bottom: 2rem;
   font-weight: 300;
   text-transform: uppercase;
 }
-.main-content .menu__section--starters h3::before, .main-content .menu__section--dishes h3::before, .main-content .menu__section--desserts h3::before {
+.main__menu__items h3::before {
   content: "";
   position: absolute;
-  bottom: -0.625rem;
-  width: 3.125rem;
+  bottom: -0.5rem;
+  width: 3rem;
   height: 0.25rem;
   background-color: #99E2D0;
 }
-.main-content .menu__btn--order {
+.main__menu__btn-order {
   padding: 20px;
   border: none;
   border-radius: 25px;
@@ -687,10 +708,10 @@ img {
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  padding: 0.9375rem 2.5rem;
+  padding: 1rem 2.5rem;
   margin: 0 auto;
 }
-.main-content .menu__btn--order:hover {
+.main__menu__btn-order:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   background: linear-gradient(201deg, #ff93e1 -5.2%, #a16be0 110.74%);
 }
@@ -698,7 +719,7 @@ img {
 .menu-item {
   display: flex;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 0.625rem;
+  border-radius: 0.5rem;
   margin-top: 1.25rem;
   cursor: pointer;
   overflow: hidden;
@@ -725,7 +746,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 .menu-item__description h4 {
   overflow: hidden;
@@ -745,7 +766,7 @@ img {
   flex-shrink: 0;
   display: flex;
   align-items: flex-end;
-  padding: 0.625rem 1.5625rem 0.625rem 0.3125rem;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
 }
 .menu-item__check {
   display: flex;
@@ -753,23 +774,23 @@ img {
   align-items: center;
   margin-right: -65px;
   width: 65px;
-  padding: 0 0.9375rem;
+  padding: 0 1rem;
   background-color: #99E2D0;
   transition: margin-right 0.4s ease-in-out;
 }
 .menu-item__check::after {
   content: "\f00c";
   font-family: "FontAwesome";
-  padding: 0.3125rem;
+  padding: 0.5rem;
   border-radius: 50%;
   color: #99E2D0;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   background-color: #fff;
   transition: transform 0.4s ease-in-out;
 }
 @media screen and (min-width: 1300px) {
   .menu-item__check::after {
-    padding: 0.625rem;
+    padding: 0.75rem;
   }
 }
 .menu-item:hover .menu-item__check, .menu-item:focus .menu-item__check {
@@ -777,6 +798,10 @@ img {
 }
 .menu-item:hover .menu-item__check::after, .menu-item:focus .menu-item__check::after {
   transform: rotate(360deg);
+}
+
+.footer-menu {
+  margin-top: -50px;
 }
 
 /*# sourceMappingURL=style.css.map */
