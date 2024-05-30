@@ -1,0 +1,15 @@
+.restau-header {
+    position: relative;
+
+    &__return-link {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
+        padding: 5px;
+
+        i {
+            font-size: clamp(1.5rem, 2vw, 2rem);
+        }
+    }
+}

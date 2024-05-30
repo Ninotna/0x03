@@ -1,0 +1,191 @@
+// Main
+.main-content {
+    &__banner-image {
+        max-height: 55vh;
+        min-height: 30vh;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 px2rem(40);
+        position: relative;
+        top: -50px;
+
+        @media screen and (min-width: 1300px) {
+            flex-direction: row;
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: "Shrikhand", cursive;
+            font-weight: 500;
+            padding: px2rem(20);
+            width: 100%;
+            border-radius: px2rem(30) px2rem(30) 0 0;
+            font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+            background-color: white;
+
+            @media screen and (min-width: 1300px) {
+                justify-content: center;
+            }
+        }
+
+        .heart {
+            @include flex-center;
+            width: px2rem(30);
+            height: px2rem(30);
+
+            @media screen and (min-width: 1300px) {
+                margin-left: px2rem(20);
+            }
+
+            &::before {
+                @include heart;
+            }
+
+            &::after {
+                @include heart;
+                @include heart-solid;
+            }
+
+            &:hover::before {
+                color: transparent;
+            }
+
+            &:hover::after {
+                font-weight: 900;
+                opacity: 1;
+            }
+        }
+
+        &__section--starters,
+        &__section--dishes,
+        &__section--desserts {
+            padding: px2rem(10) px2rem(20) px2rem(40);
+            width: 100%;
+
+            @media screen and (min-width: 1300px) {
+                width: 30%;
+                padding-bottom: px2rem(40);
+            }
+
+            h3 {
+                position: relative;
+                margin-bottom: px2rem(30);
+                padding-left: px2rem(10);
+                font-weight: 300;
+                text-transform: uppercase;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: px2rem(-10);
+                    width: px2rem(50);
+                    height: px2rem(4);
+                    background-color: $color-tertiary;
+                }
+            }
+        }
+
+        &__btn--order {
+            @include button-style;
+            @include button-shadow;
+            padding: px2rem(15) px2rem(40);
+            margin: 0 auto;
+
+            &:hover {
+                @include button-hover;
+            }
+        }
+    }
+}
+
+// Meal
+.menu-item {
+    display: flex;
+    @include button-shadow;
+    border-radius: px2rem(10);
+    margin-top: px2rem(20);
+    cursor: pointer;
+    overflow: hidden;
+    animation: appear 1s both;
+
+    @media screen and (min-width: 1300px) {
+        margin-top: px2rem(40);
+    }
+
+    @for $i from 2 through 5 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
+        }
+    }
+
+    &__description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: px2rem(10);
+
+        h4 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: clamp(1.4rem, 2vw, 1.9rem);
+        }
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 200;
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+        }
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: clamp(1.2rem, 2vw, 1.5rem);
+        margin-left: auto;
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-end;
+        padding: px2rem(10) px2rem(25) px2rem(10) px2rem(5);
+    }
+
+    &__check {
+        @include flex-center;
+        margin-right: -65px;
+        width: 65px;
+        padding: 0 px2rem(15);
+        background-color: $color-tertiary;
+        transition: margin-right 0.4s ease-in-out;
+
+        &::after {
+            content: '\f00c';
+            font-family: 'FontAwesome';
+            padding: px2rem(5);
+            border-radius: 50%;
+            color: $color-tertiary;
+            font-size: px2rem(15);
+            background-color: #fff;
+            transition: transform 0.4s ease-in-out;
+
+            @media screen and (min-width: 1300px) {
+                padding: px2rem(10);
+            }
+        }
+    }
+
+    &:hover &__check,
+    &:focus &__check {
+        margin-right: 0;
+    }
+
+    &:hover &__check::after,
+    &:focus &__check::after {
+        transform: rotate(360deg);
+    }
+}
