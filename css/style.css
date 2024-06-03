@@ -144,10 +144,11 @@ img {
   letter-spacing: 1px;
   cursor: pointer;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(1rem, 2vw, 1.2rem);
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   transition: all 0.4s ease-in-out;
+  min-width: 50%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1023px) and (min-width: 767px) {
@@ -247,7 +248,7 @@ img {
 }
 
 .restaurant-section {
-  padding: 54px 2vh 68px 2vh;
+  padding: 54px 18px 68px 18px;
   background-color: #F6F6F6;
 }
 @media screen and (min-width: 767px) {
@@ -270,6 +271,7 @@ img {
   margin: 0 auto;
   width: 100%;
   max-width: 125rem;
+  row-gap: 18px;
 }
 @media screen and (min-width: 767px) {
   .restaurant-section__items {
@@ -581,9 +583,8 @@ img {
   gap: 0 2.5rem;
   position: relative;
   top: -50px;
-  border-radius: 50px;
-  min-width: 635px;
-  padding: 51px 13px 40px 13px;
+  border-radius: 40px 40px 0 0;
+  padding: 51px 13px 0px 13px;
   background-color: #F6F6F6;
 }
 @media screen and (min-width: 767px) {
@@ -602,17 +603,17 @@ img {
   align-items: center;
   justify-content: space-between;
   font-family: "Shrikhand", cursive;
-  font-weight: 500;
+  font-weight: 400;
   width: 100%;
-  font-size: 1.75rem;
-  padding: 0 2rem 0 2rem;
+  font-size: clamp(28px, 1.75rem, 2.5rem);
+  padding: 0;
 }
 @media screen and (min-width: 767px) {
   .main__menu__title {
     padding: 0px 2rem 0 2rem;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1023px) {
   .main__menu__title {
     justify-content: center;
   }
@@ -627,7 +628,7 @@ img {
   height: 2rem;
   margin-right: 24px;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1023px) {
   .main__menu .heart {
     margin-left: 2rem;
   }
@@ -661,7 +662,7 @@ img {
   opacity: 1;
 }
 .main__menu__items {
-  padding: 1rem 2rem 2.5rem;
+  padding: 1rem 0 0;
   width: 100%;
 }
 @media screen and (min-width: 767px) {
@@ -691,13 +692,14 @@ img {
   letter-spacing: 1px;
   cursor: pointer;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(1rem, 2vw, 1.2rem);
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   transition: all 0.4s ease-in-out;
+  min-width: 50%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   padding: 1rem 2.5rem;
-  margin: 0 auto;
+  margin: 40px 25% 40px 25%;
 }
 .main__menu__btn-order:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -734,27 +736,30 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0.5rem;
+  padding: 15px 0 15px 15px;
 }
 .menu-item__description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: clamp(1.4rem, 2vw, 1.9rem);
+  font-size: clamp(18px, 1.125rem, 1.3rem);
+  font-weight: 500;
+  white-space: nowrap;
 }
 .menu-item__description p {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-weight: 200;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  font-size: clamp(15px, 0.9375rem, 1.1rem);
+  white-space: nowrap;
 }
 .menu-item__price {
-  font-weight: 500;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+  font-size: clamp(15px, 0.9375rem, 1.1rem);
   margin-left: auto;
   flex-shrink: 0;
   display: flex;
   align-items: flex-end;
-  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  padding: 15px 15px 15px 5px;
 }
 .menu-item__check {
   display: flex;

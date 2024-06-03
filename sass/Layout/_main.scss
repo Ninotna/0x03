@@ -196,7 +196,7 @@
 // Section Restaurant
 
 .restaurant-section {
-    padding: 54px 2vh 68px 2vh;
+    padding: 54px 18px 68px 18px;
         // margin-bottom: px2rem(68);
     background-color: $color-bg-grey;
 
@@ -218,10 +218,11 @@
     &__items {
         display: grid; /* Changed from flex to grid */
         grid-template-columns: 1fr; /* Set single column for smaller screens */
-
         margin: 0 auto;
         width: 100%;
         max-width: px2rem(2000);
+        row-gap:18px;
+
         @media screen and (min-width: $breakpoint-tablet) {
 			gap: 25px 50px;
             grid-template-columns: repeat(2, 1fr); /* Two columns for tablet and larger screens */
