@@ -196,18 +196,19 @@
 // Section Restaurant
 
 .restaurant-section {
-    padding: 54px 2vh 0 2vh;
+    padding: 54px 2vh 68px 2vh;
+        // margin-bottom: px2rem(68);
     background-color: $color-bg-grey;
 
     @media screen and (min-width: $breakpoint-tablet) {
-        margin-bottom: px2rem(30);
-        padding: 0 60px 0 60px;
+        // margin-bottom: px2rem(30);
+        padding: 0 60px 30px 60px;
     }
     @media screen and (min-width: $breakpoint-desktop) {
-        margin-bottom: px2rem(30);
-        padding: 0 180px 0 180px;
+        // margin-bottom: px2rem(30);
+        padding: 0 180px 30px 180px;
     }
-    margin-bottom: px2rem(68);
+
 
     &__heading {
         font-size: 2rem;
@@ -233,7 +234,7 @@
     &__item {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1.5rem;
+        // margin-bottom: 1.5rem;
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
