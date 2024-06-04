@@ -44,7 +44,7 @@
 // button-style
 
 @mixin button-style{
-    padding: 20px;
+    padding: 13px 18.75px;
     border: none;
     border-radius: 25px;
     letter-spacing: 1px;
@@ -55,6 +55,7 @@
     background: $gradient;
     transition: all 0.4s ease-in-out;
 	min-width:50%;
+	text-align:center;
 }
 
 @mixin button-hover{

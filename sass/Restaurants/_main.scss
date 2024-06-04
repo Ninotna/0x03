@@ -110,8 +110,8 @@
     &__btn-order {
         @include button-style;
         @include button-shadow;
-        padding: 1rem 2.5rem;
         margin: 40px 25% 40px 25%;
+        min-width:186px;
 
         &:hover {
             @include button-hover;
