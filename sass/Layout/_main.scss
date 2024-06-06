@@ -165,8 +165,14 @@
 	{
 		font-size: 1.5rem;
 		color: #757575;
-		margin-right: 1rem;
+		margin-right: 16px;
         padding-left:34.50px;
+        @media screen and (min-width: $breakpoint-tablet) 
+		{
+            padding-left:12px;
+            margin-right: 10px;
+        }
+
 
 		// &--step1 
 		// {
@@ -188,6 +194,11 @@
 	{
 		font-size: 1rem;
 		color: #333;
+
+        @media screen and (min-width: $breakpoint-tablet) 
+		{
+            text-align:left;
+        }
 	}
 }
 }

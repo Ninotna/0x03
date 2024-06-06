@@ -236,8 +236,14 @@ img {
 .main__workflow__icon {
   font-size: 1.5rem;
   color: #757575;
-  margin-right: 1rem;
+  margin-right: 16px;
   padding-left: 34.5px;
+}
+@media screen and (min-width: 767px) {
+  .main__workflow__icon {
+    padding-left: 12px;
+    margin-right: 10px;
+  }
 }
 .main__workflow__icon--step3 {
   color: #9356DC;
@@ -245,6 +251,11 @@ img {
 .main__workflow__text {
   font-size: 1rem;
   color: #333;
+}
+@media screen and (min-width: 767px) {
+  .main__workflow__text {
+    text-align: left;
+  }
 }
 
 .restaurant-section {
@@ -709,13 +720,13 @@ img {
 .menu-item {
   display: flex;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 0.5rem;
+  border-radius: 15px;
   margin-top: 1.25rem;
   cursor: pointer;
   overflow: hidden;
   animation: appear 1s both;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1023px) {
   .menu-item {
     margin-top: 2.5rem;
   }
@@ -774,10 +785,10 @@ img {
 .menu-item__check::after {
   content: "\f00c";
   font-family: "FontAwesome";
-  padding: 0.5rem;
+  padding: 3px 4px;
   border-radius: 50%;
   color: #99E2D0;
-  font-size: 1rem;
+  font-size: 14px;
   background-color: #fff;
   transition: transform 0.4s ease-in-out;
 }

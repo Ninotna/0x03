@@ -123,13 +123,13 @@
 .menu-item {
     display: flex;
     @include button-shadow;
-    border-radius: 0.5rem;
+    border-radius: 15px;
     margin-top: 1.25rem;
     cursor: pointer;
     overflow: hidden;
     animation: appear 1s both;
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: $breakpoint-desktop) {
         margin-top: 2.5rem;
     }
 
@@ -183,10 +183,10 @@
         &::after {
             content: '\f00c';
             font-family: 'FontAwesome';
-            padding: 0.5rem;
+            padding: 3px 4px;
             border-radius: 50%;
             color: $color-tertiary;
-            font-size: 1rem;
+            font-size: 14px;
             background-color: #fff;
             transition: transform 0.4s ease-in-out;
 
