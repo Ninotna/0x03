@@ -21,10 +21,11 @@
     
     @media screen and (min-width: $breakpoint-tablet) {
         flex-direction: row;
-        padding: 51px 210px 40px 210px;
+        padding: 51px 50px 40px 50px;
+        margin: 0 40px;
 
     }
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: $breakpoint-desktop) {
         margin: 0 192px;
     }
     background-color: $color-bg-grey;
@@ -40,6 +41,7 @@
         padding: 0;
         @media screen and (min-width: $breakpoint-tablet) {
             padding: 0px 2rem 0 2rem;
+            justify-content: center;
         }
 
 
@@ -56,6 +58,11 @@
         width: 2rem;
         height: 2rem;
         margin-right:24px;
+        
+
+        @media screen and (min-width: $breakpoint-tablet) {
+            margin-left:50px;
+        }
 
         @media screen and (min-width: $breakpoint-desktop) {
             margin-left: 2rem;
@@ -81,8 +88,9 @@
     }
 
     &__items {
-        padding: 1rem 0 0;
+        // padding: 16px 0 0;
         width: 100%;
+        margin-top:40px;
 
         @media screen and (min-width: $breakpoint-tablet) {
             width: 100%; 
@@ -91,7 +99,7 @@
 
         h3 {
             position: relative;
-            margin-bottom: 2rem;
+            margin-bottom: 12px;
             // padding-left: 1rem;
             font-weight: 300;
             text-transform: uppercase;
@@ -127,15 +135,15 @@
     margin-top: 1.25rem;
     cursor: pointer;
     overflow: hidden;
-    animation: appear 1s both;
+    animation: load-menu 1.5s both;
 
     @media screen and (min-width: $breakpoint-desktop) {
         margin-top: 2.5rem;
     }
 
-    @for $i from 2 through 5 {
+    @for $i from 2 through 5 { // on doit commmencer à 2 car le 1 correspond au h3
         &:nth-child(#{$i}) {
-            animation-delay: 100ms * $i;
+            animation-delay: 150ms * $i;
         }
     }
 
@@ -148,7 +156,7 @@
         h4 {
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: clamp(18px, px2rem(18), 1.3rem);
+            font-size: 18px;
             font-weight: 500;
             white-space: nowrap;
         }
@@ -157,7 +165,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             font-weight: 300;
-            font-size: clamp(15px, px2rem(15), 1.1rem);
+            font-size: 15px;
             white-space: nowrap;
         }
     }

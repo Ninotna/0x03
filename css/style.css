@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes load-menu {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -37,13 +47,13 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-size: 16px;
   font-weight: 500;
 }
 
 h4 {
   font-size: clamp(1.5rem, 2vw, 2rem);
-  font-weight: 500;
+  font-weight: 300;
 }
 
 p {
@@ -600,10 +610,11 @@ img {
 @media screen and (min-width: 767px) {
   .main__menu {
     flex-direction: row;
-    padding: 51px 210px 40px 210px;
+    padding: 51px 50px 40px 50px;
+    margin: 0 40px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1023px) {
   .main__menu {
     margin: 0 192px;
   }
@@ -621,6 +632,7 @@ img {
 @media screen and (min-width: 767px) {
   .main__menu__title {
     padding: 0px 2rem 0 2rem;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -637,6 +649,11 @@ img {
   width: 2rem;
   height: 2rem;
   margin-right: 24px;
+}
+@media screen and (min-width: 767px) {
+  .main__menu .heart {
+    margin-left: 50px;
+  }
 }
 @media screen and (min-width: 1023px) {
   .main__menu .heart {
@@ -672,8 +689,8 @@ img {
   opacity: 1;
 }
 .main__menu__items {
-  padding: 1rem 0 0;
   width: 100%;
+  margin-top: 40px;
 }
 @media screen and (min-width: 767px) {
   .main__menu__items {
@@ -683,7 +700,7 @@ img {
 }
 .main__menu__items h3 {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 12px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -724,7 +741,7 @@ img {
   margin-top: 1.25rem;
   cursor: pointer;
   overflow: hidden;
-  animation: appear 1s both;
+  animation: load-menu 1.5s both;
 }
 @media screen and (min-width: 1023px) {
   .menu-item {
@@ -732,16 +749,16 @@ img {
   }
 }
 .menu-item:nth-child(2) {
-  animation-delay: 200ms;
-}
-.menu-item:nth-child(3) {
   animation-delay: 300ms;
 }
+.menu-item:nth-child(3) {
+  animation-delay: 450ms;
+}
 .menu-item:nth-child(4) {
-  animation-delay: 400ms;
+  animation-delay: 600ms;
 }
 .menu-item:nth-child(5) {
-  animation-delay: 500ms;
+  animation-delay: 750ms;
 }
 .menu-item__description {
   white-space: nowrap;
@@ -752,7 +769,7 @@ img {
 .menu-item__description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: clamp(18px, 1.125rem, 1.3rem);
+  font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -760,7 +777,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 300;
-  font-size: clamp(15px, 0.9375rem, 1.1rem);
+  font-size: 15px;
   white-space: nowrap;
 }
 .menu-item__price {
