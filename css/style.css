@@ -21,6 +21,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.container-center {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 body {
   font-size: 1rem;
 }
@@ -177,13 +184,13 @@ img {
 }
 @media screen and (min-width: 767px) {
   .main__workflow {
-    padding: 3.125rem 5rem;
+    padding: 3.125rem 0;
     align-items: flex-start;
   }
 }
 @media screen and (min-width: 1023px) {
   .main__workflow {
-    padding: 3.125rem 11.25rem;
+    padding: 3.125rem 0;
   }
 }
 .main__workflow__title {
@@ -274,12 +281,12 @@ img {
 }
 @media screen and (min-width: 767px) {
   .restaurant-section {
-    padding: 0 60px 30px 60px;
+    padding: 0 0 30px 0;
   }
 }
 @media screen and (min-width: 1023px) {
   .restaurant-section {
-    padding: 0 180px 30px 180px;
+    padding: 0 0 30px 0;
   }
 }
 .restaurant-section__heading {
@@ -404,6 +411,7 @@ img {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   margin-bottom: 1rem;
+  font-size: 18px;
 }
 @media screen and (min-width: 767px) {
   .footer h2 {

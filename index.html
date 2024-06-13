@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - ohmyfood!</title>
     <meta name="title" content="Accueil - ohmyfood!">
-  <meta name="description" content="Ohmyfood! est une plateforme de commande de repas en ligne. Vous composez, comparez, payez en ligne et on s'occupe du reste. Gain de temps et une expérience inégalée.">
+    <meta name="description"
+        content="Ohmyfood! est une plateforme de commande de repas en ligne. Vous composez, comparez, payez en ligne et on s'occupe du reste. Gain de temps et une expérience inégalée.">
     <link rel="icon" href="./images/logo/favico.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    
+
     <!-- Loader -->
     <div class="loader">
         <div class="loader__cup">
@@ -24,120 +27,132 @@
         </p>
     </div>
 
-  <!-- Header -->
+    <!-- Header -->
 
-  <header class="header">
-    <h1>ohmyfood</h1>
-  </header>
+    <header class="header">
+        <h1>ohmyfood</h1>
+    </header>
 
-  <!-- Main -->
+    <!-- Main -->
 
-  <main class="main">
-    <div class="main__location">
-        <p>Paris, Belleville</p>
-    </div>
-
-    <section class="main__description">
-      <h2 class="main__description__title">Réservez le menu qui vous convient</h2>
-      <p class="main__description__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-      <a class="main__description__btn" href="#restaurants">Explorer nos restaurants</a>                
-    </section>
-
-    <section class="main__workflow">
-        <h2 class="main__workflow__title">Fonctionnement</h2>
-        <div class="main__workflow__steps">
-            <div class="main__workflow__step">
-                <div class="main__workflow__number main__workflow__number--step1">1</div>
-                <i class="fas fa-mobile-alt main__workflow__icon main__workflow__icon--step1"></i>
-                <p class="main__workflow__text">Choisissez un restaurant</p>
-            </div>
-            <div class="main__workflow__step">
-                <div class="main__workflow__number main__workflow__number--step2">2</div>
-                <i class="fas fa-list main__workflow__icon main__workflow__icon--step2"></i>
-                <p class="main__workflow__text">Composez votre menu</p>
-            </div>
-            <div class="main__workflow__step">
-                <div class="main__workflow__number main__workflow__number--step3">3</div>
-                <i class="fas fa-store main__workflow__icon main__workflow__icon--step3"></i>
-                <p class="main__workflow__text">Dégustez au restaurant</p>
-            </div>
+    <main class="main">
+        <div class="main__location">
+            <p>Paris, Belleville</p>
         </div>
-    </section>
-    
-    
-    
 
-    <section id="restaurants" class="restaurant-section">
-        <h2 class="restaurant-section__heading">Restaurants</h2>
-        <div class="restaurant-section__items">
-        <article class="restaurant-section__item">
-            <a href="restaurants/palette-du-gout-menilmontant.html" class="restaurant-section__link">
-                <img loading="lazy" src="images/restaurants/menilmontant.jpg" alt="Délicieux repas gastronomique à La palette du goût, Ménilmontant, avec du pain et une boisson rafraîchissante, sur une table de restaurant élégante." class="restaurant-section__image" >
-                <div class="restaurant-section__badge">Nouveau</div>
-                <div class="restaurant-section__info">
-                    <h3>La palette du goût<span class="restaurant-section__info__heart"></span></h3>
-                    <p>Ménilmontant</p>
+        <section class="main__description">
+            <h2 class="main__description__title">Réservez le menu qui vous convient</h2>
+            <p class="main__description__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <a class="main__description__btn" href="#restaurants">Explorer nos restaurants</a>
+        </section>
+
+
+        <section class="main__workflow">
+            <div class="container-center">
+                <h2 class="main__workflow__title">Fonctionnement</h2>
+                <div class="main__workflow__steps">
+                    <div class="main__workflow__step">
+                        <div class="main__workflow__number main__workflow__number--step1">1</div>
+                        <i class="fas fa-mobile-alt main__workflow__icon main__workflow__icon--step1"></i>
+                        <p class="main__workflow__text">Choisissez un restaurant</p>
+                    </div>
+                    <div class="main__workflow__step">
+                        <div class="main__workflow__number main__workflow__number--step2">2</div>
+                        <i class="fas fa-list main__workflow__icon main__workflow__icon--step2"></i>
+                        <p class="main__workflow__text">Composez votre menu</p>
+                    </div>
+                    <div class="main__workflow__step">
+                        <div class="main__workflow__number main__workflow__number--step3">3</div>
+                        <i class="fas fa-store main__workflow__icon main__workflow__icon--step3"></i>
+                        <p class="main__workflow__text">Dégustez au restaurant</p>
+                    </div>
                 </div>
-            </a>
-        </article>
-    
-        <article class="restaurant-section__item">
-            <a href="restaurants/note-enchantee-charonne.html" class="restaurant-section__link">
-                <img loading="lazy" src="images/restaurants/charonne.jpg" alt="Savoureux repas à La note enchantée, Charonne, avec des arancini, olives et légumes grillés sur une table de restaurant élégante." class="restaurant-section__image" >
-                <div class="restaurant-section__badge">Nouveau</div>
-                <div class="restaurant-section__info">
-                    <h3>La note enchantée<span class="restaurant-section__info__heart"></span></h3>
-                    <p>Charonne</p>
+            </div>
+        </section>
+
+
+
+        <section id="restaurants" class="restaurant-section">
+            <div class="container-center">
+                <h2 class="restaurant-section__heading">Restaurants</h2>
+                <div class="restaurant-section__items">
+                    <article class="restaurant-section__item">
+                        <a href="restaurants/palette-du-gout-menilmontant.html" class="restaurant-section__link">
+                            <img loading="lazy" src="images/restaurants/menilmontant.jpg"
+                                alt="Délicieux repas gastronomique à La palette du goût, Ménilmontant, avec du pain et une boisson rafraîchissante, sur une table de restaurant élégante."
+                                class="restaurant-section__image">
+                            <div class="restaurant-section__badge">Nouveau</div>
+                            <div class="restaurant-section__info">
+                                <h3>La palette du goût<span class="restaurant-section__info__heart"></span></h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="restaurant-section__item">
+                        <a href="restaurants/note-enchantee-charonne.html" class="restaurant-section__link">
+                            <img loading="lazy" src="images/restaurants/charonne.jpg"
+                                alt="Savoureux repas à La note enchantée, Charonne, avec des arancini, olives et légumes grillés sur une table de restaurant élégante."
+                                class="restaurant-section__image">
+                            <div class="restaurant-section__badge">Nouveau</div>
+                            <div class="restaurant-section__info">
+                                <h3>La note enchantée<span class="restaurant-section__info__heart"></span></h3>
+                                <p>Charonne</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="restaurant-section__item">
+                        <a href="restaurants/a-la-francaise-cite-rouge.html" class="restaurant-section__link">
+                            <img loading="lazy" src="images/restaurants/cite-rouge.jpg"
+                                alt="Brunch élégant à À la française, Cité Rouge, avec des œufs Bénédicte, une sauce hollandaise crémeuse et des légumes frais."
+                                class="restaurant-section__image">
+                            <div class="restaurant-section__info">
+                                <h3>À la française<span class="restaurant-section__info__heart"></span></h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="restaurant-section__item">
+                        <a href="restaurants/le-delice-des-sens-folie-mericourt.html" class="restaurant-section__link">
+                            <img loading="lazy" src="images/restaurants/folie-mericourt.jpg"
+                                alt="Plat somptueux à Le délice des sens, Folie-Méricourt, avec du poisson grillé et des légumes colorés, servi sur une assiette de dîner chic."
+                                class="restaurant-section__image">
+                            <div class="restaurant-section__info">
+                                <h3>Le délice des sens<span class="restaurant-section__info__heart"></span></h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                        </a>
+                    </article>
                 </div>
-            </a>
-        </article>
-    
-        <article class="restaurant-section__item">
-            <a href="restaurants/a-la-francaise-cite-rouge.html" class="restaurant-section__link">
-                <img loading="lazy" src="images/restaurants/cite-rouge.jpg" alt="Brunch élégant à À la française, Cité Rouge, avec des œufs Bénédicte, une sauce hollandaise crémeuse et des légumes frais." class="restaurant-section__image" >
-                <div class="restaurant-section__info">
-                    <h3>À la française<span class="restaurant-section__info__heart"></span></h3>
-                    <p>Cité Rouge</p>
-                </div>
-            </a>
-        </article>
-    
-        <article class="restaurant-section__item">
-            <a href="restaurants/le-delice-des-sens-folie-mericourt.html" class="restaurant-section__link">
-                <img loading="lazy" src="images/restaurants/folie-mericourt.jpg" alt="Plat somptueux à Le délice des sens, Folie-Méricourt, avec du poisson grillé et des légumes colorés, servi sur une assiette de dîner chic." class="restaurant-section__image" >
-                <div class="restaurant-section__info">
-                    <h3>Le délice des sens<span class="restaurant-section__info__heart"></span></h3>
-                    <p>Folie-Méricourt</p>
-                </div>
-            </a>
-        </article>
-    </div>
-    </section>
-  </main>
-  
-    
-       <!-- Footer -->
+            </div>
+        </section>
+    </main>
 
 
-  <footer class="footer">
-    <h2>ohmyfood</h2>
-    <ul class="footer__nav">
-        <li>
-            <a href="#">Proposer un restaurant</a>
-        </li>
-        <li>
-            <a href="#">Devenir partenaire</a>
-        </li>
-        <li>
-            <a href="#">Mentions légales</a>
-        </li>
-        <li>
-            <a href="mailto:contact@ohmyfood.com">Contact</a>
-        </li>
-    </ul>
-</footer>
+    <!-- Footer -->
 
 
-  </body>
+    <footer class="footer">
+        <h2>ohmyfood</h2>
+        <ul class="footer__nav">
+            <li>
+                <a href="#">Proposer un restaurant</a>
+            </li>
+            <li>
+                <a href="#">Devenir partenaire</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
+        </ul>
+    </footer>
 
-  </html>
+
+</body>
+
+</html>
