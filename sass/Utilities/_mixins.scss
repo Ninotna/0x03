@@ -51,10 +51,10 @@
     cursor: pointer;
     color: white;
     font-weight: 500;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: 16px;
     background: $gradient;
     transition: all 0.4s ease-in-out;
-	min-width:50%;
+	width:186px;
 	text-align:center;
 }
 

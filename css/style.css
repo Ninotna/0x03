@@ -162,10 +162,10 @@ img {
   cursor: pointer;
   color: white;
   font-weight: 500;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 16px;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   transition: all 0.4s ease-in-out;
-  min-width: 50%;
+  width: 186px;
   text-align: center;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   margin: 0 20%;
@@ -405,6 +405,7 @@ img {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
+    align-items: center;
   }
 }
 .footer h2 {
@@ -612,7 +613,8 @@ img {
   position: relative;
   top: -50px;
   border-radius: 40px 40px 0 0;
-  padding: 51px 13px 0px 13px;
+  padding: 51px 13px 40px 13px;
+  align-items: center;
   background-color: #F6F6F6;
 }
 @media screen and (min-width: 767px) {
@@ -703,21 +705,20 @@ img {
 @media screen and (min-width: 767px) {
   .main__menu__items {
     width: 100%;
-    padding-bottom: 2.5rem;
   }
 }
 .main__menu__items h3 {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 300;
   text-transform: uppercase;
 }
 .main__menu__items h3::before {
   content: "";
   position: absolute;
-  bottom: -0.5rem;
-  width: 3rem;
-  height: 0.25rem;
+  bottom: -8px;
+  width: 40px;
+  height: 3px;
   background-color: #99E2D0;
 }
 .main__menu__btn-order {
@@ -728,14 +729,14 @@ img {
   cursor: pointer;
   color: white;
   font-weight: 500;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 16px;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   transition: all 0.4s ease-in-out;
-  min-width: 50%;
+  width: 186px;
   text-align: center;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  margin: 40px 25% 40px 25%;
-  min-width: 186px;
+  margin: 40px 0 0 0;
+  width: 186px;
 }
 .main__menu__btn-order:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -746,14 +747,15 @@ img {
   display: flex;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  margin-top: 1.25rem;
+  margin-top: 12px;
   cursor: pointer;
   overflow: hidden;
   animation: load-menu 1.5s both;
+  background-color: #fff;
 }
 @media screen and (min-width: 1023px) {
   .menu-item {
-    margin-top: 2.5rem;
+    margin-top: 12px;
   }
 }
 .menu-item:nth-child(2) {
@@ -803,7 +805,7 @@ img {
   align-items: center;
   margin-right: -65px;
   width: 65px;
-  padding: 0 1rem;
+  padding: 0 16px;
   background-color: #99E2D0;
   transition: margin-right 0.4s ease-in-out;
 }
@@ -816,11 +818,6 @@ img {
   font-size: 14px;
   background-color: #fff;
   transition: transform 0.4s ease-in-out;
-}
-@media screen and (min-width: 1300px) {
-  .menu-item__check::after {
-    padding: 0.75rem;
-  }
 }
 .menu-item:hover .menu-item__check, .menu-item:focus .menu-item__check {
   margin-right: 0;

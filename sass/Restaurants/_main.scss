@@ -17,7 +17,8 @@
     top: -50px;
     border-radius: 40px 40px 0 0;
     // min-width: 635px;
-    padding: 51px 13px 0px 13px;
+    padding: 51px 13px 40px 13px;
+    align-items: center;
     
     @media screen and (min-width: $breakpoint-tablet) {
         flex-direction: row;
@@ -94,12 +95,11 @@
 
         @media screen and (min-width: $breakpoint-tablet) {
             width: 100%; 
-            padding-bottom: 2.5rem;
         }
 
         h3 {
             position: relative;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
             // padding-left: 1rem;
             font-weight: 300;
             text-transform: uppercase;
@@ -107,9 +107,9 @@
             &::before {
                 content: '';
                 position: absolute;
-                bottom: -0.5rem;
-                width: 3rem;
-                height: 0.25rem;
+                bottom: -8px;
+                width: 40px;
+                height: 3px;
                 background-color: $color-tertiary;
             }
         }
@@ -118,8 +118,8 @@
     &__btn-order {
         @include button-style;
         @include button-shadow;
-        margin: 40px 25% 40px 25%;
-        min-width:186px;
+        margin: 40px 0 0 0;
+        width:186px;
 
         &:hover {
             @include button-hover;
@@ -132,13 +132,14 @@
     display: flex;
     @include button-shadow;
     border-radius: 15px;
-    margin-top: 1.25rem;
+    margin-top: 12px;
     cursor: pointer;
     overflow: hidden;
     animation: load-menu 1.5s both;
+    background-color: #fff;
 
     @media screen and (min-width: $breakpoint-desktop) {
-        margin-top: 2.5rem;
+        margin-top: 12px;
     }
 
     @for $i from 2 through 5 { // on doit commmencer à 2 car le 1 correspond au h3
@@ -184,7 +185,7 @@
         @include flex-center;
         margin-right: -65px;
         width: 65px;
-        padding: 0 1rem;
+        padding: 0 16px;
         background-color: $color-tertiary;
         transition: margin-right 0.4s ease-in-out;
 
@@ -197,10 +198,6 @@
             font-size: 14px;
             background-color: #fff;
             transition: transform 0.4s ease-in-out;
-
-            @media screen and (min-width: 1300px) {
-                padding: 0.75rem;
-            }
         }
     }
 
