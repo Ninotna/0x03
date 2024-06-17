@@ -88,7 +88,9 @@ img {
 .header {
   height: 60px;
   width: 100%;
-  box-shadow: inset 0 -10px 10px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,16 +278,15 @@ img {
 .restaurant-section {
   padding: 54px 18px 68px 18px;
   background-color: #F6F6F6;
-  margin-top: 30px;
 }
 @media screen and (min-width: 767px) {
   .restaurant-section {
-    padding: 0 20px 30px 20px;
+    padding: 45px 20px 30px 20px;
   }
 }
 @media screen and (min-width: 1023px) {
   .restaurant-section {
-    padding: 0 20px 30px 20px;
+    padding: 30px 20px 30px 20px;
   }
 }
 .restaurant-section__heading {

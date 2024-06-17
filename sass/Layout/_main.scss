@@ -214,15 +214,14 @@
     padding: 54px 18px 68px 18px;
         // margin-bottom: px2rem(68);
     background-color: $color-bg-grey;
-    margin-top:30px;
 
     @media screen and (min-width: $breakpoint-tablet) {
         // margin-bottom: px2rem(30);
-        padding: 0 20px 30px 20px;
+        padding: 45px 20px 30px 20px;
     }
     @media screen and (min-width: $breakpoint-desktop) {
         // margin-bottom: px2rem(30);
-        padding: 0 20px 30px 20px;
+        padding: 30px 20px 30px 20px;
     }
 
 

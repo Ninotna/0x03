@@ -2,7 +2,9 @@
 {
     height : 60px;
     width: 100%;
-    box-shadow: inset 0 -10px 10px -12px rgba(0, 0, 0, 0.5);
+    position: relative;
+	z-index: 1;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
     @include flex-center;
   
     @media screen and (min-width: $breakpoint-desktop) {
