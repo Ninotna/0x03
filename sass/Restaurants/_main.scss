@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0 px2rem(40);
+    gap: 0 40px;
     position: relative;
     top: -50px;
     border-radius: 40px 40px 0 0;
@@ -38,7 +38,7 @@
         font-family: "Shrikhand", cursive;
         font-weight: 400;
         width: 100%;
-        font-size: clamp(28px, px2rem(28), 2.5rem);
+        font-size: 28px;
         padding: 0;
         @media screen and (min-width: $breakpoint-tablet) {
             padding: 0px 2rem 0 2rem;
@@ -56,8 +56,8 @@
     }
 
     .heart {
-        width: 2rem;
-        height: 2rem;
+        width: 32px;
+        height: 32px;
         margin-right:24px;
         
 
@@ -66,7 +66,7 @@
         }
 
         @media screen and (min-width: $breakpoint-desktop) {
-            margin-left: 2rem;
+            margin-left: 32px;
         }
 
         &::before {
@@ -100,7 +100,7 @@
         h3 {
             position: relative;
             margin-bottom: 20px;
-            // padding-left: 1rem;
+            // padding-left: 16px;
             font-weight: 300;
             text-transform: uppercase;
 
@@ -173,7 +173,7 @@
 
     &__price {
         font-weight: 700;
-        font-size: clamp(15px, px2rem(15), 1.1rem);
+        font-size: 15px;
         margin-left: auto;
         flex-shrink: 0;
         display: flex;
